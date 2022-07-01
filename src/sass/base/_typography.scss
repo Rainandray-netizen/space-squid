@@ -2,6 +2,68 @@
 
 // Fonts
 
+@font-face {
+  font-family: 'Nimbus Sans L';
+  src: url('NimbusSanL-RegIta.eot');
+  src: url('NimbusSanL-RegIta.eot?#iefix') format('embedded-opentype'),
+    url('NimbusSanL-RegIta.woff2') format('woff2'),
+    url('NimbusSanL-RegIta.woff') format('woff'),
+    url('NimbusSanL-RegIta.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nimbus Sans L';
+  src: url('NimbusSanL-Reg.eot');
+  src: url('NimbusSanL-Reg.eot?#iefix') format('embedded-opentype'),
+    url('NimbusSanL-Reg.woff2') format('woff2'),
+    url('NimbusSanL-Reg.woff') format('woff'),
+    url('NimbusSanL-Reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nimbus Sans L';
+  src: url('NimbusSanL-Bol.eot');
+  src: url('NimbusSanL-Bol.eot?#iefix') format('embedded-opentype'),
+    url('NimbusSanL-Bol.woff2') format('woff2'),
+    url('NimbusSanL-Bol.woff') format('woff'),
+    url('NimbusSanL-Bol.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nimbus Sans L';
+  src: url('NimbusSanL-BolIta.eot');
+  src: url('NimbusSanL-BolIta.eot?#iefix') format('embedded-opentype'),
+    url('NimbusSanL-BolIta.woff2') format('woff2'),
+    url('NimbusSanL-BolIta.woff') format('woff'),
+    url('NimbusSanL-BolIta.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Prata';
+  src: url('Prata-Regular.eot');
+  src: url('Prata-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Prata-Regular.woff2') format('woff2'),
+    url('Prata-Regular.woff') format('woff'),
+    url('Prata-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Typography
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
