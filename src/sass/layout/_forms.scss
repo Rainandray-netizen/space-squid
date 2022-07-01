@@ -1,0 +1,14 @@
+/* Forms */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  border: 1px solid lightgrey;
+  padding: 0.5rem 1rem;
+  max-width: 400px;
+  margin: 0.5rem 0;
+}
