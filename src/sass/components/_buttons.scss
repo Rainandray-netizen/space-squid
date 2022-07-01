@@ -1,4 +1,4 @@
-/* Buttons */
+// Buttons
 
 button {
   padding: 1rem 1.5rem;
@@ -6,11 +6,11 @@ button {
   border-radius: 0;
   margin: 1rem 0;
   width: fit-content;
-  background-color: gainsboro;
-  transition: 0.3s ease-in-out;
+  background-color: $accent-color;
+  transition: $main-transition;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: lightskyblue;
+  background-color: $accent-color-2;
 }

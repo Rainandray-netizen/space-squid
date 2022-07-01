@@ -1,6 +1,6 @@
-/* Typography */
+// Typography
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// Fonts
 
 html {
   font-size: 62.5%;
@@ -9,8 +9,15 @@ html {
 
 body {
   line-height: 1.6;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: $body-font;
   cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $heading-font;
 }
 
 h1 {
@@ -49,12 +56,12 @@ li {
 
 a {
   text-decoration: none;
-  color: blue;
-  transition: 0.3s ease-in-out;
+  color: $primary-color;
+  transition: $main-transition;
   cursor: pointer;
 }
 
 a:hover {
   text-decoration: none;
-  color: lightskyblue;
+  color: $secondary-color;
 }
