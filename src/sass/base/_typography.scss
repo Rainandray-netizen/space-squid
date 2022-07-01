@@ -44,3 +44,17 @@ textarea {
 li {
   list-style-position: inside;
 }
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: blue;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: lightskyblue;
+}
