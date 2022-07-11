@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../sass/main.scss';
 
 import data from '../data/content'
 import Header from './Header'
@@ -8,7 +9,6 @@ import Footer from './Footer'
 import ChooseUs from './ChooseUs'
 import Portfolio from './Portfolio'
 import Testimonials from './Testimonials'
-
 
 
 function App() {

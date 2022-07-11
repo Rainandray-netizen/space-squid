@@ -1,6 +1,68 @@
-/* Typography */
+// Typography
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// Fonts
+
+@font-face {
+  font-family: 'Nimbus Sans L';
+  src: url('../../assets/fonts/NimbusSanL-RegIta.eot');
+  src: url('../../assets/fonts/NimbusSanL-RegIta.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/NimbusSanL-RegIta.woff2') format('woff2'),
+    url('../../assets/fonts/NimbusSanL-RegIta.woff') format('woff'),
+    url('../../assets/fonts/NimbusSanL-RegIta.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '../../assets/fonts/Nimbus Sans L';
+  src: url('../../assets/fonts/NimbusSanL-Reg.eot');
+  src: url('../../assets/fonts/NimbusSanL-Reg.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/NimbusSanL-Reg.woff2') format('woff2'),
+    url('../../assets/fonts/NimbusSanL-Reg.woff') format('woff'),
+    url('../../assets/fonts/NimbusSanL-Reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nimbus Sans L';
+  src: url('../../assets/fonts/NimbusSanL-Bol.eot');
+  src: url('../../assets/fonts/NimbusSanL-Bol.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/NimbusSanL-Bol.woff2') format('woff2'),
+    url('../../assets/fonts/NimbusSanL-Bol.woff') format('woff'),
+    url('../../assets/fonts/NimbusSanL-Bol.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nimbus Sans L';
+  src: url('../../assets/fonts/NimbusSanL-BolIta.eot');
+  src: url('../../assets/fonts/NimbusSanL-BolIta.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/NimbusSanL-BolIta.woff2') format('woff2'),
+    url('../../assets/fonts/NimbusSanL-BolIta.woff') format('woff'),
+    url('../../assets/fonts/NimbusSanL-BolIta.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Prata';
+  src: url('../../assets/fonts/Prata-Regular.eot');
+  src: url('../../assets/fonts/Prata-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/Prata-Regular.woff2') format('woff2'),
+    url('../../assets/fonts/Prata-Regular.woff') format('woff'),
+    url('../../assets/fonts/Prata-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Typography
 
 html {
   font-size: 62.5%;
@@ -9,8 +71,15 @@ html {
 
 body {
   line-height: 1.6;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: $body-font;
   cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $heading-font;
 }
 
 h1 {
@@ -49,12 +118,12 @@ li {
 
 a {
   text-decoration: none;
-  color: blue;
-  transition: 0.3s ease-in-out;
+  color: $primary-color;
+  transition: $main-transition;
   cursor: pointer;
 }
 
 a:hover {
   text-decoration: none;
-  color: lightskyblue;
+  color: $secondary-color;
 }
