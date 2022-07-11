@@ -15,11 +15,14 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Services services={data.services} />
-      <ChooseUs />
-      <Portfolio portfolio={data.portfolio} />
-      <Testimonials testimonials={data.testimonials} />
+      <main className="page-container">
+        <Hero />
+        <Services services={data.services} />
+        <ChooseUs />
+        <Portfolio portfolio={data.portfolio} />
+        <Testimonials testimonials={data.testimonials} />
+      </main>
+
       <Footer />
     </>
   );

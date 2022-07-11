@@ -6,7 +6,7 @@ const Services = ({ services }) => {
   console.log(services)
   return (
     <>
-      <article className="services-section page-container">
+      <article className="services-section">
         <h2>Services We Provide</h2>
         <section className="services-grid">
           {services.map((service) =>
