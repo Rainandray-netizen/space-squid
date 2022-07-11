@@ -2,13 +2,14 @@ import React from 'react'
 
 import TestimonialTile from './TestimonialTile'
 
-const Testimonials = ({testimonials}) => {
-  return(
-    <div>
-      {testimonials.map((testimonial)=>
-        <TestimonialTile key={testimonial.id} testimonial={testimonial}/>
+const Testimonials = ({ testimonials }) => {
+  return (
+    <article className="testimonial-section">
+      <h2>What Our Clients Say</h2>
+      {testimonials.map((testimonial) =>
+        <TestimonialTile key={testimonial.id} testimonial={testimonial} />
       )}
-    </div>
+    </article>
   )
 }
 
