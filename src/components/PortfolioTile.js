@@ -1,11 +1,11 @@
 import React from 'react'
 
-const PortfolioTile = ({project}) => {
-  const {image, alt} = project
+const PortfolioTile = ({ project }) => {
+  const { image, alt } = project
 
-  return(
-    <div>
-      <img src={image} alt={alt}/>
+  return (
+    <div className="portfolio-tile">
+      <img src={image} alt={alt} />
     </div>
   )
 }
