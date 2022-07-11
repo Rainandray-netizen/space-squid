@@ -10,14 +10,13 @@ import ChooseUs from './ChooseUs'
 import Portfolio from './Portfolio'
 import Testimonials from './Testimonials'
 
-
 function App() {
   return (
     <>
       <Header />
       <Hero />
       <Services services={data.services}/>
-      <ChooseUs />
+      <ChooseUs chooseUs={data.chooseUs}/>
       <Portfolio portfolio={data.portfolio}/>
       <Testimonials testimonials={data.testimonials}/>
       <Footer />
