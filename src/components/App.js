@@ -16,10 +16,10 @@ function App() {
     <>
       <Header />
       <Hero />
-      <Services services={data.services}/>
+      <Services services={data.services} />
       <ChooseUs />
-      <Portfolio portfolio={data.portfolio}/>
-      <Testimonials testimonials={data.testimonials}/>
+      <Portfolio portfolio={data.portfolio} />
+      <Testimonials testimonials={data.testimonials} />
       <Footer />
     </>
   );

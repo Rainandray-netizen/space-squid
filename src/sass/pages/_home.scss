@@ -1,0 +1,21 @@
+// Homepage
+
+.services-section {
+  text-align: center;
+}
+
+.service-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+
+  img {
+    width: 15rem;
+    height: auto;
+  }
+
+  h3 {
+    margin: 1.5rem 0;
+  }
+}
