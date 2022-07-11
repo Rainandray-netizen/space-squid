@@ -1,15 +1,25 @@
 import React from 'react';
 import '../sass/main.scss';
 
-import Header from './Header';
-import Footer from './Footer';
+import data from '../data/content'
+import Header from './Header'
+import Hero from './Hero'
+import Services from './Services'
+import Footer from './Footer'
+import ChooseUs from './ChooseUs'
+import Portfolio from './Portfolio'
+import Testimonials from './Testimonials'
 
 
 function App() {
   return (
     <>
       <Header />
-      Squids!
+      <Hero />
+      <Services services={data.services}/>
+      <ChooseUs />
+      <Portfolio portfolio={data.portfolio}/>
+      <Testimonials testimonials={data.testimonials}/>
       <Footer />
     </>
   );
