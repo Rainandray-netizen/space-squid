@@ -1,9 +1,12 @@
 import React from 'react'
 
-const ChooseUs = () => {
+const ChooseUs = ({chooseUs}) => {
+  const {header, body, cta} = chooseUs
   return(
     <div>
-      Choose Us
+      <h1>{header}</h1>
+      <p>{body}</p>
+      <button>{cta}</button>
     </div>
   )
 }

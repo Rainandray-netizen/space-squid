@@ -15,6 +15,11 @@ const data = {
   {id: 3, image: webHostingImg, alt: 'server stack', subtitle: 'Hosting', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
   {id: 4, image: webMaintenanceImg, alt: 'cog', subtitle: 'Maintenance', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
  ],
+ chooseUs:{
+  header:'Why Choose Us',
+  body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Mollis nunc sed id semper risus in. Praesent semper feugiat nibh sed pulvinar proin. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Odio ut enim blandit volutpat maecenas. Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum.',
+  cta:'GET IN TOUCH',
+ },
  portfolio:[
   {id:1, image: orangeSquareImg, alt: 'a completely orange square'}
  ],
