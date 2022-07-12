@@ -12,11 +12,12 @@ import Testimonials from './Testimonials'
 import ContactUs from './ContactUs'
 
 function App() {
+  console.log('hero: ',data.hero)
   return (
     <>
       <Header />
       <main className="page-container">
-        <Hero />
+        <Hero hero={data.hero} />
         <Services services={data.services} />
         <ChooseUs chooseUs={data.chooseUs} />
         <Portfolio portfolio={data.portfolio} />

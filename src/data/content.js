@@ -3,8 +3,17 @@ import webDevImg from '../assets/icons/web-development.png'
 import webHostingImg from '../assets/icons/web-hosting.png'
 import webMaintenanceImg from '../assets/icons/web-maintenance.png'
 import orangeSquareImg from '../assets/images/orange-square.jpeg'
+import spaceBubble from '../assets/images/space-bubble.png'
+import spaceSquidImage from '../assets/images/space-squid-image-transparent.png'
 
 const data = {
+ hero:{
+  body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  backgroundImage: spaceBubble,
+  logoImage: spaceSquidImage,
+  backgroundAlt: 'Stars in deep space',
+  logoAlt: 'A squid blasting off with a rocket engine',
+ },
  about:{
   header: "What We Do",
   body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
