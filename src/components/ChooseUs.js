@@ -1,6 +1,9 @@
 import React from 'react'
 
-const ChooseUs = () => {
+const ChooseUs = ({chooseUs}) => {
+
+  const { header, body, cta } = chooseUs
+  
   return (
     <article className="choose-us-section">
       <h2>{header}</h2>
