@@ -25,7 +25,11 @@ const data = {
  ],
  testimonials:[
   {id:1, body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", person: "Name S.",}
- ]
+ ],
+ contactUs:{
+  header:'Work With Us',
+  body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+ }
 }
 
 export default data
