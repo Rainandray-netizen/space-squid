@@ -9,6 +9,7 @@ import Footer from './Footer'
 import ChooseUs from './ChooseUs'
 import Portfolio from './Portfolio'
 import Testimonials from './Testimonials'
+import ContactUs from './ContactUs'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <ChooseUs chooseUs={data.chooseUs} />
         <Portfolio portfolio={data.portfolio} />
         <Testimonials testimonials={data.testimonials} />
+        <ContactUs contactUs={data.contactUs}/>
       </main>
       <Footer />
     </>
