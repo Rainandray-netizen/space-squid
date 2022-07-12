@@ -1,0 +1,105 @@
+// Header
+
+// Hero
+
+.hero-banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  h1 {
+    font-size: 5rem;
+    line-height: 1.2;
+  }
+}
+
+.space-squid-creative {
+  font-family: Lobster;
+  color: $accent-color;
+  font-size: 6rem;
+}
+
+.space-squid-image {
+  position: relative;
+  margin: 3rem;
+}
+
+#space-bubble {
+  position: relative;
+  width: 30rem;
+  height: auto;
+}
+
+#space-squid {
+  width: 22rem;
+  height: auto;
+  position: absolute;
+  top: 3rem;
+  left: 6rem;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 2rem);
+  }
+
+  100% {
+    transform: translate(0, -0);
+  }
+}
+
+/* Tablet & Laptop View */
+@media (min-width: 768px) {
+  .hero-banner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  #space-bubble {
+    position: relative;
+    width: 35rem;
+    height: auto;
+  }
+
+  #space-squid {
+    width: 25rem;
+    height: auto;
+    position: absolute;
+    top: 4rem;
+    left: 8rem;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1200px) {
+  #space-bubble {
+    position: relative;
+    width: 40rem;
+    height: auto;
+  }
+
+  #space-squid {
+    width: 30rem;
+    height: auto;
+    position: absolute;
+    top: 4rem;
+    left: 8rem;
+  }
+}
