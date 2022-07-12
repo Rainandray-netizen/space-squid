@@ -9,20 +9,21 @@ import Footer from './Footer'
 import ChooseUs from './ChooseUs'
 import Portfolio from './Portfolio'
 import Testimonials from './Testimonials'
-
+import ContactUs from './ContactUs'
 
 function App() {
+  console.log('hero: ',data.hero)
   return (
     <>
       <Header />
       <main className="page-container">
-        <Hero />
+        <Hero hero={data.hero} />
         <Services services={data.services} />
-        <ChooseUs />
+        <ChooseUs chooseUs={data.chooseUs} />
         <Portfolio portfolio={data.portfolio} />
         <Testimonials testimonials={data.testimonials} />
+        <ContactUs contactUs={data.contactUs}/>
       </main>
-
       <Footer />
     </>
   );
