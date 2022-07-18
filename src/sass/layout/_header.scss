@@ -89,6 +89,10 @@
 
 /* Desktop View */
 @media (min-width: 1200px) {
+  .space-squid-image {
+    text-align: right;
+  }
+
   #space-bubble {
     position: relative;
     width: 40rem;
@@ -100,6 +104,6 @@
     height: auto;
     position: absolute;
     top: 4rem;
-    left: 8rem;
+    left: 12rem;
   }
 }
