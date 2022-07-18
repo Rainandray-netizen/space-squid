@@ -16,7 +16,6 @@ const Portfolio = ({ portfolio }) => {
           )}
         </Carousel>
       </article>
-
     </article>
   )
 }
