@@ -30,11 +30,16 @@ const data = {
   cta:'GET IN TOUCH',
  },
  portfolio:[
-  {id:1, image: orangeSquareImg, alt: 'a completely orange square'}
+  {id:1, image: orangeSquareImg, alt: 'a completely orange square'},
+  {id:2, image: orangeSquareImg, alt: 'a completely orange square'},
+  {id:3, image: orangeSquareImg, alt: 'a completely orange square'},
  ],
  testimonials:[
-  {id:1, body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", person: "Name S.",}
- ],
+  {id:1, body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", person: "Name A."},
+  {id:2, body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", person: "Name B."},
+  {id:3, body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", person: "Name C."},
+ 
+],
  contactUs:{
   header:'Work With Us',
   body:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
