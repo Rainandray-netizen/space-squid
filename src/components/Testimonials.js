@@ -1,18 +1,26 @@
 import React from 'react'
 
 import TestimonialTile from './TestimonialTile'
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-// import { Carousel } from 'react-responsive-carousel';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from 'swiper'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
 
 const Testimonials = ({ testimonials }) => {
   return (
     <article className="testimonial-section">
       <h2>What Our Clients Say</h2>
-      {/* <Carousel autoPlay={true} infiniteLoop={true} interval={6000}>
+      <Swiper
+        modules={[Navigation]}
+        navigation={true}
+      >
         {testimonials.map((testimonial) =>
-          <TestimonialTile key={testimonial.id} testimonial={testimonial} />
+          <SwiperSlide>
+            <TestimonialTile key={testimonial.id} testimonial={testimonial} />
+          </SwiperSlide>
         )}
-      </Carousel> */}
+      </Swiper>
     </article>
   )
 }

@@ -9,6 +9,8 @@ import 'swiper/css/navigation'
 
 const Portfolio = ({ portfolio }) => {
   const {height, width} = useWindowDimensions()
+
+  //set the number of panels to show in the carousel based on window size
   const [swiperSlides, setSwiperSlides] = useState(null)
 
   useEffect(()=>{
