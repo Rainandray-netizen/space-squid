@@ -57,9 +57,12 @@
 }
 
 .contact-us-section {
-
   h2,
   p {
     text-align: center;
+  }
+  .error-message {
+    text-align: left;
+    color: red;
   }
 }
