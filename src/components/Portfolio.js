@@ -46,8 +46,8 @@ const Portfolio = ({ portfolio }) => {
           modules={[Navigation]}
         >
           {portfolio.map((project) => (
-            <SwiperSlide>
-              <PortfolioTile key={project.id} project={project} />
+            <SwiperSlide key={project.id}>
+              <PortfolioTile project={project} />
             </SwiperSlide>
           ))}
         </Swiper>
