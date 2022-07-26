@@ -43,7 +43,7 @@ const ContactUs = ({ contactUs }) => {
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
             //this is where the emailjs call happens!
-            if (values.password !== '') {
+            if (values.password === '') {
               alert(JSON.stringify(values, null, 2));
               setSubmitting(false);
             }
