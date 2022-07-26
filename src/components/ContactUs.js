@@ -9,7 +9,12 @@ const ContactUs = ({ contactUs }) => {
       <h2>{header}</h2>
       <p>{body}</p>
       <Formik
-        initialValues={{ name: '', email: '', website: '', message: '' }}
+        initialValues={{
+          name: '',
+          email: '',
+          website: '',
+          message: '',
+        }}
         validate={(values) => {
           const errors = {};
           if (!values.name) {
@@ -29,6 +34,7 @@ const ContactUs = ({ contactUs }) => {
         }}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
+            //this is where the emailjs call happens!
             alert(JSON.stringify(values, null, 2));
             setSubmitting(false);
           }, 400);
