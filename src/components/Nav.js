@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 //Logo
 import Logo from '../assets/logos/space-squid-logo-black.png';
@@ -21,7 +21,7 @@ const Nav = () => {
         </section>
       </nav>
     </>
-  )
-}
+  );
+};
 
 export default Nav;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 //Logo
 import Logo from '../assets/logos/space-squid-logo.png';
@@ -21,7 +21,7 @@ const Footer = () => {
         </section>
       </footer>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
