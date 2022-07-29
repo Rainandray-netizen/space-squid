@@ -40,13 +40,6 @@ const ContactUs = ({ contactUs }) => {
       );
   };
 
-  //setting style with javascript to trick sneaky spambots
-  const [styles, setStyles] = useState({ display: 'inline' });
-
-  useEffect(() => {
-    setStyles({ display: 'none' });
-  }, []);
-
   switch (formStatus) {
     default:
       return (
@@ -79,16 +72,9 @@ const ContactUs = ({ contactUs }) => {
               return errors;
             }}
             onSubmit={(values, { setSubmitting }) => {
-              setTimeout(() => {
-                //this is where the emailjs call happens!
-                if (values.password === '') {
-                  alert(JSON.stringify(values, null, 2));
-                  setSubmitting(false);
-
-                  setFormValues(values);
-                  setFormStatus('captcha');
-                }
-              }, 400);
+              setSubmitting(false);
+              setFormValues(values);
+              setFormStatus('captcha');
             }}
           >
             {({ isSubmitting }) => (
@@ -112,23 +98,6 @@ const ContactUs = ({ contactUs }) => {
                   <Field type="email" name="email" />
                   <ErrorMessage
                     name="email"
-                    component="p"
-                    className="error-message"
-                  />
-                </label>
-
-                <label style={styles}>
-                  <div>
-                    Password<span>*</span>:
-                  </div>
-                  <Field
-                    type="text"
-                    name="password"
-                    tabIndex="-1"
-                    autoComplete="off"
-                  />
-                  <ErrorMessage
-                    name="password"
                     component="p"
                     className="error-message"
                   />
