@@ -43,7 +43,7 @@ const ContactUs = ({ contactUs }) => {
   switch (formStatus) {
     default:
       return (
-        <article className="contact-us-section">
+        <article id="contact-us" className="contact-us-section">
           <h2>{header}</h2>
           <p>{body}</p>
           <Formik
@@ -137,7 +137,7 @@ const ContactUs = ({ contactUs }) => {
       );
     case 'captcha':
       return (
-        <article className="contact-us-section">
+        <article id="contact-us" className="contact-us-section">
           <ReCAPTCHA
             sitekey={process.env.REACT_APP_CAPTCHA_SITE_KEY}
             onChange={sendEmail}
@@ -146,13 +146,13 @@ const ContactUs = ({ contactUs }) => {
       );
     case 'success':
       return (
-        <article className="contact-us-section">
+        <article id="contact-us" className="contact-us-section">
           <h2>Success!</h2>
         </article>
       );
     case 'error':
       return (
-        <article className="contact-us-section">
+        <article id="contact-us" className="contact-us-section">
           <h2>Fail!</h2>
         </article>
       );

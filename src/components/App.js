@@ -10,6 +10,7 @@ import ChooseUs from './ChooseUs';
 import Portfolio from './Portfolio';
 import Testimonials from './Testimonials';
 import ContactUs from './ContactUs';
+import BackToTopButton from './BackToTop';
 
 function App() {
   console.log('hero: ', data.hero);
@@ -25,6 +26,7 @@ function App() {
         <ContactUs contactUs={data.contactUs} />
       </main>
       <Footer />
+      <BackToTopButton />
     </>
   );
 }
