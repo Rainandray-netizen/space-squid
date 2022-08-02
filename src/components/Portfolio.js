@@ -26,7 +26,7 @@ const Portfolio = ({ portfolio }) => {
   }, [width]);
 
   return (
-    <article className="portfolio-section">
+    <article id="portfolio" className="portfolio-section">
       <h2>Portfolio</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
