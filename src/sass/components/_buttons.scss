@@ -16,3 +16,10 @@ button {
 button:hover {
   background-color: $accent-color-2;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+}
