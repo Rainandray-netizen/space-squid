@@ -18,10 +18,8 @@ const HamburgerMenu = ({ toggleyOverflow }) => {
   };
 
   return (
-    <>
-      <div
-        className={menuToggle ? 'hamburger-menu showMenu' : 'hamburger-menu'}
-      >
+    <div className="mobile-menu-container">
+      <div className={menuToggle ? 'hamburger-menu showMenu' : 'hamburger-menu'} >
         <ul>
           <li>
             <Link to="about">About</Link>
@@ -32,14 +30,10 @@ const HamburgerMenu = ({ toggleyOverflow }) => {
           <li>
             <Link to="portfolio">Portfolio</Link>
           </li>
-          <Link to="contact-us" offset={-50}>
-            <button to="contact-us">Contact Us</button>
-          </Link>
+          <li><Link to="contact-us" offset={-50}>Contact Us</Link></li>
         </ul>
       </div>
       <button className="hamburger" onClick={toggleMenu}>
-        {/* <FontAwesomeIcon className="menu-icon" icon={faBars} />
-        <FontAwesomeIcon className="close-icon displayNone" icon={faXmark} /> */}
         <FontAwesomeIcon
           className={menuToggle ? 'menu-icon displayNone' : 'menu-icon'}
           icon={faBars}
@@ -49,7 +43,7 @@ const HamburgerMenu = ({ toggleyOverflow }) => {
           icon={faXmark}
         />
       </button>
-    </>
+    </div>
   );
 };
 
