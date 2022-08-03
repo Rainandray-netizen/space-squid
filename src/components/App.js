@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../sass/main.scss';
 
 import data from '../data/content';
@@ -14,9 +14,15 @@ import BackToTopButton from './BackToTop';
 
 function App() {
   console.log('hero: ', data.hero);
+
+  const [yOverflow, setyOverflow] = useState(true);
+  const toggleyOverflow = () => {
+    setyOverflow(!yOverflow);
+  };
+
   return (
-    <>
-      <Header />
+    <div className={yOverflow ? '' : 'hideOverflow'}>
+      <Header toggleyOverflow={toggleyOverflow} />
       <main className="page-container">
         <Hero hero={data.hero} />
         <Services services={data.services} />
@@ -27,7 +33,7 @@ function App() {
       </main>
       <Footer />
       <BackToTopButton />
-    </>
+    </div>
   );
 }
 
