@@ -3,7 +3,9 @@ import { Link } from 'react-scroll';
 //Logo
 import Logo from '../assets/logos/space-squid-logo-black.png';
 
-const Nav = () => {
+import HamburgerMenu from './HamburgerMenu';
+
+const Nav = ({ toggleyOverflow }) => {
   return (
     <>
       <nav>
@@ -24,8 +26,8 @@ const Nav = () => {
                 <button to="contact-us">Contact Us</button>
               </Link>
             </ul>
-            {/* Mobile Menu goes here */}
           </div>
+          <HamburgerMenu toggleyOverflow={toggleyOverflow} />
         </section>
       </nav>
     </>
