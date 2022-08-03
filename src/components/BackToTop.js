@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import useWindowScrollPosition from '@rehooks/window-scroll-position';
+import { FaArrowUp } from 'react-icons/fa';
+import '../sass/main.scss';
 
 const BackToTopButton = () => {
   let { x, y } = useWindowScrollPosition();
@@ -31,7 +33,7 @@ const BackToTopButton = () => {
   return (
     <div className="back-to-top">
       <button style={styles} onClick={handleBackToTop}>
-        ^
+        <FaArrowUp />
       </button>
     </div>
   );
