@@ -29,7 +29,6 @@ const BackToTopButton = () => {
     });
   };
 
-  console.log(window);
   return (
     <div className="back-to-top">
       <button style={styles} onClick={handleBackToTop}>

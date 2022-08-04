@@ -1,36 +1,70 @@
 // Mobile Menu
 
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link, scroller } from 'react-scroll';
 
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { wait } from '@testing-library/user-event/dist/utils';
 
-const HamburgerMenu = ({ toggleyOverflow }) => {
+const HamburgerMenu = ({ toggleyOverflow, setyOverflow }) => {
   const [menuToggle, setMenuToggle] = useState(false);
 
   const toggleMenu = () => {
-    console.log('menu clicked');
-    setMenuToggle(!menuToggle);
     toggleyOverflow();
+
+    setMenuToggle(!menuToggle);
+  };
+
+  const handleLinkClick = (element) => {
+    setyOverflow(true);
+    //lord forgive me for this
+    wait(1).then(() => {
+      try {
+        scroller.scrollTo(element);
+      } catch (error) {
+        console.log(error);
+      }
+    });
+    setMenuToggle(!menuToggle);
   };
 
   return (
     <div className="mobile-menu-container">
-      <div className={menuToggle ? 'hamburger-menu showMenu' : 'hamburger-menu'} >
+      <div
+        className={menuToggle ? 'hamburger-menu showMenu' : 'hamburger-menu'}
+      >
         <ul>
-          <li>
-            <Link to="about">About</Link>
+          <li
+            onClick={() => {
+              handleLinkClick('about');
+            }}
+          >
+            About
           </li>
-          <li>
-            <Link to="services">Services</Link>
+          <li
+            onClick={() => {
+              handleLinkClick('services');
+            }}
+          >
+            Services
           </li>
-          <li>
-            <Link to="portfolio">Portfolio</Link>
+          <li
+            onClick={() => {
+              handleLinkClick('portfolio');
+            }}
+          >
+            Portfolio
           </li>
-          <li><Link to="contact-us" offset={-50}>Contact Us</Link></li>
+          <li
+            onClick={() => {
+              handleLinkClick('portfolio');
+            }}
+          >
+            Contact Us
+          </li>
         </ul>
       </div>
       <button className="hamburger" onClick={toggleMenu}>

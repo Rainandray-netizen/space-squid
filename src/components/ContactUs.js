@@ -4,6 +4,8 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
 
+import { Element } from 'react-scroll';
+
 const ContactUs = ({ contactUs }) => {
   const { header, body } = contactUs;
   const [formValues, setFormValues] = useState(null);
@@ -20,7 +22,6 @@ const ContactUs = ({ contactUs }) => {
       ...formValues,
       'g-recaptcha-response': captchaValue,
     };
-    console.log(params);
     emailjs
       .send(
         process.env.REACT_APP_EMAIL_JS_SERVICE,
@@ -43,118 +44,126 @@ const ContactUs = ({ contactUs }) => {
   switch (formStatus) {
     default:
       return (
-        <article id="contact-us" className="contact-us-section">
-          <h2>{header}</h2>
-          <p>{body}</p>
-          <Formik
-            initialValues={{
-              name: '',
-              email: '',
-              website: '',
-              message: '',
-              password: '',
-            }}
-            validate={(values) => {
-              const errors = {};
-              if (!values.name) {
-                errors.name = 'Required';
-              }
-              if (!values.email) {
-                errors.email = 'Required';
-              } else if (
-                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-              ) {
-                errors.email = 'Invalid email address';
-              }
-              if (!values.message) {
-                errors.message = 'Required';
-              }
-              return errors;
-            }}
-            onSubmit={(values, { setSubmitting }) => {
-              setSubmitting(false);
-              setFormValues(values);
-              setFormStatus('captcha');
-            }}
-          >
-            {({ isSubmitting }) => (
-              <Form>
-                <label>
-                  <div>
-                    Name<span>*</span>:
+        <Element name="contact-us">
+          <article className="contact-us-section">
+            <h2>{header}</h2>
+            <p>{body}</p>
+            <Formik
+              initialValues={{
+                name: '',
+                email: '',
+                website: '',
+                message: '',
+                password: '',
+              }}
+              validate={(values) => {
+                const errors = {};
+                if (!values.name) {
+                  errors.name = 'Required';
+                }
+                if (!values.email) {
+                  errors.email = 'Required';
+                } else if (
+                  !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+                ) {
+                  errors.email = 'Invalid email address';
+                }
+                if (!values.message) {
+                  errors.message = 'Required';
+                }
+                return errors;
+              }}
+              onSubmit={(values, { setSubmitting }) => {
+                setSubmitting(false);
+                setFormValues(values);
+                setFormStatus('captcha');
+              }}
+            >
+              {({ isSubmitting }) => (
+                <Form>
+                  <label>
+                    <div>
+                      Name<span>*</span>:
+                    </div>
+                    <Field type="text" name="name" />
+                    <ErrorMessage
+                      name="name"
+                      component="p"
+                      className="error-message"
+                    />
+                  </label>
+
+                  <label>
+                    <div>
+                      Email<span>*</span>:
+                    </div>
+                    <Field type="email" name="email" />
+                    <ErrorMessage
+                      name="email"
+                      component="p"
+                      className="error-message"
+                    />
+                  </label>
+
+                  <label>
+                    <div>Website:</div>
+                    <Field type="text" name="website" />
+                    <ErrorMessage
+                      name="website"
+                      component="p"
+                      className="error-message"
+                    />
+                  </label>
+
+                  <label>
+                    <div>
+                      Message<span>*</span>:
+                    </div>
+                    <Field type="textarea" name="message" />
+                    <ErrorMessage
+                      name="message"
+                      component="p"
+                      className="error-message"
+                    />
+                  </label>
+
+                  <div className="form-button-container">
+                    <button type="submit" disabled={isSubmitting}>
+                      Submit
+                    </button>
                   </div>
-                  <Field type="text" name="name" />
-                  <ErrorMessage
-                    name="name"
-                    component="p"
-                    className="error-message"
-                  />
-                </label>
-
-                <label>
-                  <div>
-                    Email<span>*</span>:
-                  </div>
-                  <Field type="email" name="email" />
-                  <ErrorMessage
-                    name="email"
-                    component="p"
-                    className="error-message"
-                  />
-                </label>
-
-                <label>
-                  <div>Website:</div>
-                  <Field type="text" name="website" />
-                  <ErrorMessage
-                    name="website"
-                    component="p"
-                    className="error-message"
-                  />
-                </label>
-
-                <label>
-                  <div>
-                    Message<span>*</span>:
-                  </div>
-                  <Field type="textarea" name="message" />
-                  <ErrorMessage
-                    name="message"
-                    component="p"
-                    className="error-message"
-                  />
-                </label>
-
-                <div className="form-button-container">
-                  <button type="submit" disabled={isSubmitting}>
-                    Submit
-                  </button>
-                </div>
-              </Form>
-            )}
-          </Formik>
-        </article>
+                </Form>
+              )}
+            </Formik>
+          </article>
+        </Element>
       );
     case 'captcha':
       return (
-        <article id="contact-us" className="contact-us-section">
-          <ReCAPTCHA
-            sitekey={process.env.REACT_APP_CAPTCHA_SITE_KEY}
-            onChange={sendEmail}
-          />
-        </article>
+        <Element name="contact-us">
+          <article className="contact-us-section">
+            <ReCAPTCHA
+              sitekey={process.env.REACT_APP_CAPTCHA_SITE_KEY}
+              onChange={sendEmail}
+            />
+          </article>
+        </Element>
       );
     case 'success':
       return (
-        <article id="contact-us" className="contact-us-section">
-          <h2>Success!</h2>
-        </article>
+        <Element name="contact-us">
+          <article className="contact-us-section">
+            <h2>Success!</h2>
+          </article>
+        </Element>
       );
     case 'error':
       return (
-        <article id="contact-us" className="contact-us-section">
-          <h2>Fail!</h2>
-        </article>
+        <Element name="contact-us">
+          <article className="contact-us-section">
+            <h2>Fail!</h2>
+          </article>
+        </Element>
       );
   }
 };

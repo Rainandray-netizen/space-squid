@@ -13,8 +13,6 @@ import ContactUs from './ContactUs';
 import BackToTopButton from './BackToTop';
 
 function App() {
-  console.log('hero: ', data.hero);
-
   const [yOverflow, setyOverflow] = useState(true);
   const toggleyOverflow = () => {
     setyOverflow(!yOverflow);
@@ -22,7 +20,7 @@ function App() {
 
   return (
     <div className={yOverflow ? '' : 'hideOverflow'}>
-      <Header toggleyOverflow={toggleyOverflow} />
+      <Header toggleyOverflow={toggleyOverflow} setyOverflow={setyOverflow} />
       <main className="page-container">
         <Hero hero={data.hero} />
         <Services services={data.services} />
