@@ -5,7 +5,7 @@ import Logo from '../assets/logos/space-squid-logo-black.png';
 
 import HamburgerMenu from './HamburgerMenu';
 
-const Nav = ({ toggleyOverflow }) => {
+const Nav = ({ toggleyOverflow, setyOverflow }) => {
   return (
     <>
       <nav>
@@ -27,7 +27,10 @@ const Nav = ({ toggleyOverflow }) => {
               </Link>
             </ul>
           </div>
-          <HamburgerMenu toggleyOverflow={toggleyOverflow} />
+          <HamburgerMenu
+            toggleyOverflow={toggleyOverflow}
+            setyOverflow={setyOverflow}
+          />
         </section>
       </nav>
     </>

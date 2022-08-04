@@ -1,12 +1,12 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 
 import ServiceTile from './ServiceTile';
 
 const Services = ({ services }) => {
-  console.log(services);
   return (
-    <>
-      <article id="services" className="services-section">
+    <Element name="services">
+      <article className="services-section">
         <h2>Services We Provide</h2>
         <section className="services-grid">
           {services.map((service) => (
@@ -14,7 +14,7 @@ const Services = ({ services }) => {
           ))}
         </section>
       </article>
-    </>
+    </Element>
   );
 };
 
