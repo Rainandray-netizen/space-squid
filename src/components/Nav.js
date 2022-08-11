@@ -14,10 +14,10 @@ const Nav = ({ toggleyOverflow, setyOverflow }) => {
           <div className="nav-links">
             <ul>
               <li>
-                <Link to="about">About</Link>
+                <Link to="services">Services</Link>
               </li>
               <li>
-                <Link to="services">Services</Link>
+                <Link to="about">About</Link>
               </li>
               <li>
                 <Link to="portfolio">Portfolio</Link>

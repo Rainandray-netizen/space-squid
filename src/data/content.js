@@ -9,6 +9,7 @@ import spaceSquidImage from '../assets/images/space-squid-image-transparent.png'
 // Portfolio Images
 import reikilightspaceImage from '../assets/images/portfolio-reikilightspace.png';
 import twsImage from '../assets/images/portfolio-tws.png';
+import pcaImage from '../assets/images/portfolio-puruscounterattack.png';
 
 const data = {
   hero: {
@@ -69,6 +70,12 @@ const data = {
       image: twsImage,
       alt: 'TWS Health & Wellness',
       url: 'https://tws.health/',
+    },
+    {
+      id: 2,
+      image: pcaImage,
+      alt: "Purus' Counterattack",
+      url: '/',
     },
     {
       id: 3,
