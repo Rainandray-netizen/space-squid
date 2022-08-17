@@ -9,6 +9,7 @@ nav {
   margin: auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
 }
@@ -20,43 +21,52 @@ nav {
 
 .nav-links {
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-}
 
-.nav-links ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  text-transform: uppercase;
-}
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+  }
 
-.nav-links li {
-  margin: 0 1.5rem;
-  cursor: pointer;
-}
+  li {
+    margin: 0 1.5rem;
+    cursor: pointer;
+  }
 
+  a {
+    color: #333333;
+  }
+
+  a:hover {
+    color: $accent-color-2;
+  }
+}
 
 // Hamburger Menu
 
 .hamburger {
+  display: grid;
   border: none;
   background: transparent;
   cursor: pointer;
   z-index: 100;
   color: black;
   padding: 0;
+  position: relative;
+
+  svg {
+    font-size: 3rem;
+  }
 }
 
 .hamburger:hover {
   background: transparent;
-}
-
-.hamburger {
-  display: grid;
 }
 
 .menu-icon,
@@ -77,19 +87,27 @@ nav {
   background: white;
   padding-top: 4rem;
   text-align: center;
-}
 
-.hamburger-menu ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 5rem;
-}
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5rem;
+  }
 
-.hamburger-menu li {
-  padding: 1rem;
+  li {
+    padding: 1rem;
+  }
+
+  a {
+    color: #333333;
+  }
+
+  a:hover {
+    color: $accent-color-2;
+  }
 }
 
 .showMenu {
@@ -104,4 +122,34 @@ nav {
 .displayNone {
   visibility: hidden;
   display: none;
+}
+
+/* Tablet & Laptop View */
+@media (min-width: 768px) {
+  .nav-container {
+    width: 80%;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1080px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-container {
+    justify-content: flex-start;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+}
+
+/* Desktop View */
+@media (min-width: 1200px) {
+  .nav-container {
+    max-width: 1200px;
+  }
 }

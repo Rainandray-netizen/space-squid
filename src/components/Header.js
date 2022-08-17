@@ -1,12 +1,12 @@
-import React from 'react'
-import Nav from './Nav'
+import React from 'react';
+import Nav from './Nav';
 
-const Header = () => {
+const Header = ({ toggleyOverflow, setyOverflow }) => {
   return (
     <>
-      <Nav />
+      <Nav toggleyOverflow={toggleyOverflow} setyOverflow={setyOverflow} />
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -9,11 +9,19 @@
   flex-direction: column;
   align-items: center;
   margin: 3rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: $main-transition;
 
   img {
     width: 15rem;
     height: auto;
   }
+}
+
+.service-tile:hover {
+  box-shadow: 0 1rem 1rem $primary-color;
+  transform: translateY(-1rem);
 }
 
 .choose-us-section {
@@ -47,10 +55,24 @@
   font-weight: bold;
 }
 
+.testimonial-tile-container {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-tile {
+  width: 80%;
+}
+
 .contact-us-section {
 
   h2,
   p {
     text-align: center;
+  }
+
+  .error-message {
+    text-align: left;
+    color: red;
   }
 }
