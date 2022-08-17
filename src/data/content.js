@@ -55,32 +55,36 @@ const data = {
     cta: 'GET IN TOUCH',
   },
 
-  portfolio: [
-    {
-      id: 1,
-      image: reikilightspaceImage,
-      alt: 'Reikilight Space',
-      url: 'https://reikilightspace.co.uk/',
-    },
-    {
-      id: 2,
-      image: twsImage,
-      alt: 'TWS Health & Wellness',
-      url: 'https://tws.health/',
-    },
-    {
-      id: 2,
-      image: pcaImage,
-      alt: "Purus' Counterattack",
-      url: '/',
-    },
-    {
-      id: 3,
-      image: orangeSquareImg,
-      alt: 'a completely orange square',
-      url: '',
-    },
-  ],
+  portfolio: {
+    description:
+      "We've created web-apps and websites for small businesses of all types. With client side content management, email marketing integration, and built-in spam protection, we offer great websites with everything you need and nothing you don't.",
+    projects: [
+      {
+        id: 1,
+        image: reikilightspaceImage,
+        alt: 'Reikilight Space',
+        url: 'https://reikilightspace.co.uk/',
+      },
+      {
+        id: 2,
+        image: twsImage,
+        alt: 'TWS Health & Wellness',
+        url: 'https://tws.health/',
+      },
+      {
+        id: 2,
+        image: pcaImage,
+        alt: "Purus' Counterattack",
+        url: '/',
+      },
+      {
+        id: 3,
+        image: orangeSquareImg,
+        alt: 'a completely orange square',
+        url: '',
+      },
+    ],
+  },
   testimonials: [
     {
       id: 1,
