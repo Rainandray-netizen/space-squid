@@ -7,7 +7,7 @@ const Services = ({ services }) => {
   return (
     <Element name="services">
       <article className="services-section">
-        <h2>Services We Provide</h2>
+        <h2>What We Do</h2>
         <section className="services-grid">
           {services.map((service) => (
             <ServiceTile service={service} key={service.id} />
