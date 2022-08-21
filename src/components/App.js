@@ -26,7 +26,7 @@ function App() {
         <Services services={data.services} />
         <ChooseUs chooseUs={data.chooseUs} />
         <Portfolio portfolio={data.portfolio} />
-        <Testimonials testimonials={data.testimonials} />
+        {/* <Testimonials testimonials={data.testimonials} /> */}
         <ContactUs contactUs={data.contactUs} />
       </main>
       <Footer />

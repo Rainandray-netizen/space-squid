@@ -72,16 +72,10 @@ const data = {
         url: 'https://tws.health/',
       },
       {
-        id: 2,
+        id: 3,
         image: pcaImage,
         alt: "Purus' Counterattack",
         url: '/',
-      },
-      {
-        id: 3,
-        image: orangeSquareImg,
-        alt: 'a completely orange square',
-        url: '',
       },
     ],
   },

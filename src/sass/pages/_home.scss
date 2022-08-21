@@ -76,3 +76,47 @@
     color: red;
   }
 }
+
+.contact-form-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-img {
+  text-align: center;
+
+  img {
+    width: 30rem;
+    height: auto;
+  }
+}
+
+/* Tablet & Laptop View */
+@media (min-width: 768px) {
+  .contact-img {
+    text-align: center;
+
+    img {
+      width: 50rem;
+      height: auto;
+    }
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1200px) {
+  .contact-form-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-img {
+    text-align: center;
+
+    img {
+      width: 50rem;
+      height: auto;
+    }
+  }
+}
