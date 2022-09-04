@@ -32,7 +32,7 @@ const data = {
       image: webDesignImg,
       alt: 'a crossed ruler and pencil',
       subtitle: 'Design',
-      body: 'We understand the importance of quality user experience and interface. Our dedicated design team will work closely with you to design a website that your users will love!',
+      body: 'We understand the importance of quality user experience and interface. Our dedicated design team will work closely with you to design a website that your users will love.',
     },
     {
       id: 3,
@@ -75,7 +75,7 @@ const data = {
         id: 3,
         image: pcaImage,
         alt: "Purus' Counterattack",
-        url: '/',
+        url: 'https://puruscounterattack.com',
       },
     ],
   },
