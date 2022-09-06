@@ -1,5 +1,6 @@
 // Homepage
 
+// Services
 .services-section {
   text-align: center;
 }
@@ -24,6 +25,7 @@
   transform: translateY(-1rem);
 }
 
+// Choose Us
 .choose-us-section {
   text-align: center;
 
@@ -32,6 +34,18 @@
   }
 }
 
+.choose-us-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    display: none;
+  }
+}
+
+//Portfolio
 .portfolio-section {
   text-align: center;
 }
@@ -43,6 +57,7 @@
   }
 }
 
+//Testimonials
 .testimonial-section {
   text-align: center;
 }
@@ -64,6 +79,7 @@
   width: 80%;
 }
 
+//Contact Us
 .contact-us-section {
 
   h2,
@@ -74,5 +90,59 @@
   .error-message {
     text-align: left;
     color: red;
+  }
+}
+
+.contact-form-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-img {
+  text-align: center;
+
+  img {
+    width: 30rem;
+    height: auto;
+  }
+}
+
+/* Tablet & Laptop View */
+@media (min-width: 768px) {
+
+  .contact-img {
+    text-align: center;
+
+    img {
+      width: 50rem;
+      height: auto;
+    }
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1200px) {
+
+  .choose-us-info {
+    img {
+      display: block;
+      width: 20rem;
+      height: auto;
+    }
+  }
+
+  .contact-form-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-img {
+    text-align: center;
+
+    img {
+      width: 50rem;
+      height: auto;
+    }
   }
 }

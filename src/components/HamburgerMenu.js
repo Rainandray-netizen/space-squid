@@ -39,17 +39,17 @@ const HamburgerMenu = ({ toggleyOverflow, setyOverflow }) => {
         <ul>
           <li
             onClick={() => {
-              handleLinkClick('about');
-            }}
-          >
-            About
-          </li>
-          <li
-            onClick={() => {
               handleLinkClick('services');
             }}
           >
             Services
+          </li>
+          <li
+            onClick={() => {
+              handleLinkClick('about');
+            }}
+          >
+            About
           </li>
           <li
             onClick={() => {

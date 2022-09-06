@@ -63,6 +63,27 @@
   }
 }
 
+.reversefloating {
+  animation-name: reversefloating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes reversefloating {
+  0% {
+    transform: translate(0, 0) scaleX(-1);
+  }
+
+  50% {
+    transform: translate(0, 2rem) scaleX(-1);
+  }
+
+  100% {
+    transform: translate(0, -0) scaleX(-1);
+  }
+}
+
 /* Tablet & Laptop View */
 @media (min-width: 768px) {
   .hero-banner {
