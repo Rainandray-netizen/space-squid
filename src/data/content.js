@@ -57,7 +57,7 @@ const data = {
 
   portfolio: {
     description:
-      "We've created web-apps and websites for small businesses of all types. With client side content management, email marketing integration, and built-in spam protection, we offer great websites with everything you need and nothing you don't.",
+      "We've created web-apps and websites for small businesses of all types. With client side content management, email marketing integration, and built-in spam protection, we offer great websites with everything you need and nothing you don't. Some of our works are protected by nondisclosure agreements. Take a look at a few examples of our work below!",
     projects: [
       {
         id: 1,

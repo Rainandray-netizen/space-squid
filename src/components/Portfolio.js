@@ -16,6 +16,12 @@ const Portfolio = ({ portfolio }) => {
   //set the number of panels to show in the carousel based on window size
   const [swiperSlides, setSwiperSlides] = useState(null);
 
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleExpanded = () => {
+    return setExpanded(!expanded);
+  };
+
   useEffect(() => {
     let slides = 0;
     if (width >= 1200) {
@@ -31,23 +37,28 @@ const Portfolio = ({ portfolio }) => {
   return (
     <Element name="portfolio">
       <article className="portfolio-section">
-        <h2>Portfolio</h2>
+        <h2>Our Projects</h2>
         <p>{description}</p>
-        <article>
-          <Swiper
-            className="mySwiper"
-            slidesPerView={swiperSlides}
-            spaceBetween={30}
-            navigation={true}
-            modules={[Navigation]}
-          >
-            {projects.map((project) => (
-              <SwiperSlide key={project.id}>
-                <PortfolioTile project={project} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </article>
+        <button onClick={toggleExpanded}>
+          {expanded ? <span>Hide Projects</span> : <span>Show Projects</span>}
+        </button>
+        {expanded ? (
+          <article>
+            <Swiper
+              className="mySwiper"
+              slidesPerView={swiperSlides}
+              spaceBetween={30}
+              navigation={true}
+              modules={[Navigation]}
+            >
+              {projects.map((project) => (
+                <SwiperSlide key={project.id}>
+                  <PortfolioTile project={project} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </article>
+        ) : null}
       </article>
     </Element>
   );
