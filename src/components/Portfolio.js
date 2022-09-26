@@ -31,7 +31,7 @@ const Portfolio = ({ portfolio }) => {
   return (
     <Element name="portfolio">
       <article className="portfolio-section">
-        <h2>Portfolio</h2>
+        <h2>Our Projects</h2>
         <p>{description}</p>
         <article>
           <Swiper
