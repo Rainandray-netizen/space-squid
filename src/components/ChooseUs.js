@@ -15,15 +15,14 @@ const ChooseUs = ({ chooseUs }) => {
           <div>
             <h2>{header}</h2>
             <p>{body}</p>
-            <button>{cta}</button>
+            <Link to="contact-us" offset={-50}>
+              <button>{cta}</button>
+            </Link>
           </div>
           <img className="reversefloating" src={Dev2} alt="floating-developer" />
         </div>
-        <Link to="contact-us" offset={-50}>
-          {/* <button>{cta}</button> */}
-        </Link>
       </article>
-    </Element>
+    </Element >
   );
 };
 
