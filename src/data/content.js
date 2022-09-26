@@ -38,13 +38,6 @@ const data = {
     },
     {
       id: 3,
-      image: webHostingImg,
-      alt: 'server stack',
-      subtitle: 'Hosting',
-      body: "Not sure how to host your own website? Don't sweat it! We also offer secure web hosting services.",
-    },
-    {
-      id: 4,
       image: webMaintenanceImg,
       alt: 'cog',
       subtitle: 'Maintenance',

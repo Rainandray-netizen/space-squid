@@ -23,13 +23,7 @@
 /* Desktop View */
 @media (min-width: 1200px) {
 
-  .services-grid {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-
+  .services-grid,
   .projects-grid {
     display: grid;
     grid-template-columns: 33% 33% 33%;
