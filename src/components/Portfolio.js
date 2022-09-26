@@ -36,7 +36,7 @@ const Portfolio = ({ portfolio }) => {
 
   return (
     <Element name="portfolio">
-      <article className="portfolio-section">
+      <article className="projects-section">
         <h2>Our Projects</h2>
         <p>{description}</p>
         <button onClick={toggleExpanded}>
@@ -44,23 +44,15 @@ const Portfolio = ({ portfolio }) => {
         </button>
         {expanded ? (
           <article>
-            <Swiper
-              className="mySwiper"
-              slidesPerView={swiperSlides}
-              spaceBetween={30}
-              navigation={true}
-              modules={[Navigation]}
-            >
+            <section className="projects-grid">
               {projects.map((project) => (
-                <SwiperSlide key={project.id}>
-                  <PortfolioTile project={project} />
-                </SwiperSlide>
+                <PortfolioTile project={project} />
               ))}
-            </Swiper>
+            </section>
           </article>
         ) : null}
       </article>
-    </Element>
+    </Element >
   );
 };
 

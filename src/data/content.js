@@ -7,9 +7,11 @@ import spaceBubble from '../assets/images/space-bubble.png';
 import spaceSquidImage from '../assets/images/space-squid-image-transparent.png';
 
 // Portfolio Images
-import reikilightspaceImage from '../assets/images/portfolio-reikilightspace.png';
-import twsImage from '../assets/images/portfolio-tws.png';
-import pcaImage from '../assets/images/portfolio-puruscounterattack.png';
+import reikilightspaceImage from '../assets/images/project-rls.png';
+import twsImage from '../assets/images/project-tws.png';
+import theveganghostImage from '../assets/images/project-tvg.png';
+import artequalsfreedomImage from '../assets/images/project-artequalsfreedom.png';
+import cafechocolatineImage from '../assets/images/project-cafechocolatine.png';
 
 const data = {
   hero: {
@@ -63,19 +65,26 @@ const data = {
         id: 1,
         image: reikilightspaceImage,
         alt: 'Reikilight Space',
-        url: 'https://reikilightspace.co.uk/',
       },
       {
         id: 2,
         image: twsImage,
         alt: 'TWS Health & Wellness',
-        url: 'https://tws.health/',
       },
       {
         id: 3,
-        image: pcaImage,
-        alt: "Purus' Counterattack",
-        url: 'https://puruscounterattack.com',
+        image: theveganghostImage,
+        alt: 'The Vegan Ghost',
+      },
+      {
+        id: 4,
+        image: artequalsfreedomImage,
+        alt: 'Art Equals Freedom',
+      },
+      {
+        id: 5,
+        image: cafechocolatineImage,
+        alt: 'Cafe Chocolatine',
       },
     ],
   },
