@@ -20,7 +20,7 @@ const Nav = ({ toggleyOverflow, setyOverflow }) => {
                 <Link to="about">About</Link>
               </li>
               <li>
-                <Link to="portfolio">Portfolio</Link>
+                <Link to="portfolio">Projects</Link>
               </li>
               <Link to="contact-us" offset={-50}>
                 <button to="contact-us">Contact Us</button>

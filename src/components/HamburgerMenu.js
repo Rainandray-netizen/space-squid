@@ -56,11 +56,11 @@ const HamburgerMenu = ({ toggleyOverflow, setyOverflow }) => {
               handleLinkClick('portfolio');
             }}
           >
-            Portfolio
+            Projects
           </li>
           <li
             onClick={() => {
-              handleLinkClick('portfolio');
+              handleLinkClick('contact-us');
             }}
           >
             Contact Us
